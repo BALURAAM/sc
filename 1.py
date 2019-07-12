@@ -1,2 +1,2 @@
-a=input()
-print(a+".")
+bala=input()
+print(bala+".")
