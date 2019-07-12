@@ -1,16 +1,6 @@
+import math 
 def PS(a, b): 
-
-	count = 0  
-	for i in range (a, b + 1): 
-		j = 1; 
-		while j * j <= i: 
-			if j * j == i: 
-				count = count + 1
-			j = j + 1
-		i = i + 1
-	return count
-
-
+	return (math.floor(math.sqrt(b)) - math.ceil(math.sqrt(a)) + 1) 
 a = int(input())
 b = int(input())
-print (PS(a, b)) 
+print (int(PS(a, b))) 
