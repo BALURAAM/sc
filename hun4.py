@@ -1,9 +1,11 @@
 N=int(input())
 p=str(N)
 a=len(p)
-sum=0
-for i in range(0,N):
+su=0
+res=1
+for i in range(0,a):
     rem=N%10
-    sum=sum+(rem*a)
-    N/=10
-print(sum)
+    res=rem**a
+    su=su+(res)
+    N=N//10
+print(su)
