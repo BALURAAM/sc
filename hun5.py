@@ -6,4 +6,4 @@ for num in range(0,N + 1):
            if (num % i) == 0:
                break
        else:
-           print(num)
+           print(num,end=" ")
